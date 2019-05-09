@@ -1,5 +1,5 @@
 //
-//  TransitionSampleViewController.swift
+//  FirstViewController.swift
 //  MeetupAnimation
 //
 //  Created by Marine Commercon on 23/04/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TransitionSampleViewController: UIViewController {
+class FirstViewController: UIViewController {
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -47,7 +47,9 @@ class TransitionSampleViewController: UIViewController {
         button.backgroundColor = .pink
         button.titleLabel?.font = UIFont(name: "Helvetica", size: 16.0)
         button.layer.cornerRadius = 20
+        button.setTitleColor(.black, for: .normal)
         button.addTarget(self, action: #selector(submitButtonPressed), for: .touchUpInside)
+        button.setTitle("Submit", for: .normal)
         return button
     }()
 
@@ -65,9 +67,6 @@ class TransitionSampleViewController: UIViewController {
         view.addSubview(subtitleLabel)
         view.addSubview(amountLabel)
         view.addSubview(submitButton)
-
-        submitButton.setTitle("Submit", for: .normal)
-        submitButton.setTitleColor(UIColor.white, for: .normal)
     }
 
     private func setupConstraints() {
@@ -80,7 +79,7 @@ class TransitionSampleViewController: UIViewController {
             amountLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             amountLabel.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 50),
             submitButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            submitButton.bottomAnchor.constraint(equalTo: amountLabel.bottomAnchor, constant: 200),
+            submitButton.bottomAnchor.constraint(equalTo: amountLabel.bottomAnchor, constant: 150),
             submitButton.widthAnchor.constraint(equalToConstant: 200),
             submitButton.heightAnchor.constraint(equalToConstant: 40)
             ])
@@ -88,7 +87,7 @@ class TransitionSampleViewController: UIViewController {
 
     @objc
     func submitButtonPressed() {
-        let viewController = TransitionArrivalViewController()
+        let viewController = SecondViewController()
         self.navigationController?.pushViewController(viewController, animated: true)
     }
 

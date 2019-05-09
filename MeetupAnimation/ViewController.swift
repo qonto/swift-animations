@@ -12,15 +12,18 @@ import Lottie
 class ViewController: UIViewController {
 
     enum Sample: String, CaseIterable {
-        case button     = "button sample"
-        case transition = "transition sample"
-        case lottie     = "lottie sample"
-        case picker     = "slider sample"
-        case final      = "final sample"
+        case button     = "✅ Button sample"
+        case emitter    = "✨ Emitter sample"
+        case transition = "📱 Transition sample"
+        case slider     = "🧙‍♂️ Slider sample"
+        case lottie     = "🎁 Lottie sample"
+        case final      = "🥳 Final sample"
     }
 
     lazy var tableView: UITableView = {
         let tableView = UITableView()
+        tableView.backgroundColor = UIColor.clear
+        tableView.separatorStyle = .none
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: String(describing: UITableViewCell.self))
         tableView.dataSource = self
@@ -36,6 +39,7 @@ class ViewController: UIViewController {
     }
 
     private func setupInterface() {
+        view.backgroundColor = .darkPurple
         view.addSubview(tableView)
     }
 
@@ -58,8 +62,16 @@ extension ViewController: UITableViewDataSource {
         let cell =  tableView.dequeueReusableCell(withIdentifier: String(describing: UITableViewCell.self), for: indexPath)
 
         cell.textLabel?.text = Sample.allCases[indexPath.row].rawValue
+        cell.backgroundColor = UIColor.clear
+        cell.textLabel?.textColor = UIColor.white
+        cell.textLabel?.font = UIFont(name: "Helvetica", size: 20)
+        cell.selectionStyle = .none
 
         return cell
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 }
 
@@ -71,14 +83,16 @@ extension ViewController: UITableViewDelegate {
         switch sample {
         case .button:
             viewController = ButtonsViewController()
+        case .emitter:
+            viewController = EmitterViewController()
         case .transition:
-            viewController = TransitionSampleViewController()
+            viewController = FirstViewController()
+        case .slider:
+            viewController = SliderSampleViewController()
         case .lottie:
             viewController = LottieSampleViewController()
-        case .picker:
-            viewController = SliderSampleViewController()
         case .final:
-            viewController = FinalSampleViewController()
+            viewController = FirstFinalViewController()
         }
 
         self.navigationController?.pushViewController(viewController, animated: true)

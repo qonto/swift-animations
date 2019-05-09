@@ -23,6 +23,12 @@ class ButtonsViewController: UIViewController {
         return button
     }()
 
+    private lazy var gradientButton: GradientButton = {
+        let button = GradientButton(text: "Let's slide!")
+        button.translatesAutoresizingMaskIntoConstraints = false
+        return button
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -33,24 +39,42 @@ class ButtonsViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+
+        gradientButton.startAnimation()
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(true)
+
+        gradientButton.stopAnimation()
+    }
+
     private func setupInterface() {
         view.backgroundColor = .darkPurple
 
         view.addSubview(checkButton)
         view.addSubview(waveButton)
+        view.addSubview(gradientButton)
     }
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             checkButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            checkButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -50),
+            checkButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: -100),
             checkButton.heightAnchor.constraint(equalToConstant: 50),
             checkButton.widthAnchor.constraint(equalToConstant: 50),
 
             waveButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            waveButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 50),
+            waveButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 0),
             waveButton.heightAnchor.constraint(equalToConstant: 50),
-            waveButton.widthAnchor.constraint(equalToConstant: 50)
+            waveButton.widthAnchor.constraint(equalToConstant: 50),
+
+            gradientButton.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            gradientButton.centerYAnchor.constraint(equalTo: view.centerYAnchor, constant: 100),
+            gradientButton.heightAnchor.constraint(equalToConstant: 50),
+            gradientButton.widthAnchor.constraint(equalToConstant: 200)
             ])
     }
 

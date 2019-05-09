@@ -7,28 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E06E804226F4B08001EC3EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E803226F4B08001EC3EA /* ViewController.swift */; };
-		0E06E808226F4F4F001EC3EA /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E807226F4F4F001EC3EA /* CheckButton.swift */; };
-		0E0B6DDC226F6EB5007AA143 /* TransitionSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B6DDB226F6EB5007AA143 /* TransitionSampleViewController.swift */; };
+		0E0B6DDC226F6EB5007AA143 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E0B6DDB226F6EB5007AA143 /* FirstViewController.swift */; };
 		0E50DBD12270896E00257D3B /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50DBD02270896E00257D3B /* Colors.swift */; };
 		0E50DBD32270A52700257D3B /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50DBD22270A52700257D3B /* UIScreen+Utils.swift */; };
-		0E50DBD72270D3B000257D3B /* FinalSampleToArrivalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50DBD62270D3B000257D3B /* FinalSampleToArrivalTransition.swift */; };
-		0E50DBD92270D40E00257D3B /* ArrivalToFinalSampleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50DBD82270D40E00257D3B /* ArrivalToFinalSampleTransition.swift */; };
-		0E9994F0226F71B300CAAFBA /* TransitionArrivalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994EF226F71B300CAAFBA /* TransitionArrivalViewController.swift */; };
-		0E9994F22270451800CAAFBA /* SampleToArrivalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994F12270451800CAAFBA /* SampleToArrivalTransition.swift */; };
+		0E50DBD72270D3B000257D3B /* FirstToSecondFinalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50DBD62270D3B000257D3B /* FirstToSecondFinalTransition.swift */; };
+		0E50DBD92270D40E00257D3B /* SecondToFirstFinalTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E50DBD82270D40E00257D3B /* SecondToFirstFinalTransition.swift */; };
+		0E9994F0226F71B300CAAFBA /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994EF226F71B300CAAFBA /* SecondViewController.swift */; };
+		0E9994F22270451800CAAFBA /* FirstToSecondTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994F12270451800CAAFBA /* FirstToSecondTransition.swift */; };
 		0E9994F42270457100CAAFBA /* Transition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994F32270457100CAAFBA /* Transition.swift */; };
 		0E9994F62270495F00CAAFBA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994F52270495F00CAAFBA /* NavigationController.swift */; };
-		0E9994F82270539F00CAAFBA /* ArrivalToSampleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994F72270539F00CAAFBA /* ArrivalToSampleTransition.swift */; };
+		0E9994F82270539F00CAAFBA /* SecondToFirstTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994F72270539F00CAAFBA /* SecondToFirstTransition.swift */; };
 		0E9994FB22705CE300CAAFBA /* WaveButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9994FA22705CE300CAAFBA /* WaveButton.swift */; };
+		0EF1201B227B1977009B49D0 /* EmitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1201A227B1977009B49D0 /* EmitterViewController.swift */; };
+		0EF1201D227B1984009B49D0 /* EmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1201C227B1984009B49D0 /* EmitterView.swift */; };
+		0EF1202E227B41A0009B49D0 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EF1202D227B41A0009B49D0 /* GradientButton.swift */; };
+		0EF12031227C2541009B49D0 /* AnimatedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8D3CE22704A44003F3DF5 /* AnimatedLayer.swift */; };
+		0EF12032227C2541009B49D0 /* CheckButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E807226F4F4F001EC3EA /* CheckButton.swift */; };
+		0EF12033227C2541009B49D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E06E803226F4B08001EC3EA /* ViewController.swift */; };
+		0EF12034227C2541009B49D0 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA4F86226F292C009E77C6 /* ButtonsViewController.swift */; };
 		56DA4F85226F292C009E77C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA4F84226F292C009E77C6 /* AppDelegate.swift */; };
-		56DA4F87226F292C009E77C6 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA4F86226F292C009E77C6 /* ButtonsViewController.swift */; };
 		56DA4F8A226F292C009E77C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DA4F88226F292C009E77C6 /* Main.storyboard */; };
 		56DA4F8C226F292D009E77C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56DA4F8B226F292D009E77C6 /* Assets.xcassets */; };
 		56DA4F8F226F292D009E77C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56DA4F8D226F292D009E77C6 /* LaunchScreen.storyboard */; };
 		56DA4F98226F3D25009E77C6 /* SliderSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA4F97226F3D25009E77C6 /* SliderSampleViewController.swift */; };
 		56DA4F9A226F3D39009E77C6 /* Slider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DA4F99226F3D39009E77C6 /* Slider.swift */; };
-		56E8D3CF22704A44003F3DF5 /* AnimatedLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8D3CE22704A44003F3DF5 /* AnimatedLayer.swift */; };
-		56E8D3D222705F9F003F3DF5 /* FinalSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8D3D122705F9F003F3DF5 /* FinalSampleViewController.swift */; };
+		56E8D3D222705F9F003F3DF5 /* FirstFinalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E8D3D122705F9F003F3DF5 /* FirstFinalViewController.swift */; };
 		CE0D963D226F489400FDEF2C /* Lottie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE0D963C226F489400FDEF2C /* Lottie.framework */; };
 		CE0D9642226F502200FDEF2C /* GiftBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D9641226F502200FDEF2C /* GiftBoxView.swift */; };
 		CE0D9644226F504200FDEF2C /* LottieSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D9643226F504200FDEF2C /* LottieSampleViewController.swift */; };
@@ -38,17 +41,20 @@
 /* Begin PBXFileReference section */
 		0E06E803226F4B08001EC3EA /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E06E807226F4F4F001EC3EA /* CheckButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckButton.swift; sourceTree = "<group>"; };
-		0E0B6DDB226F6EB5007AA143 /* TransitionSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionSampleViewController.swift; sourceTree = "<group>"; };
+		0E0B6DDB226F6EB5007AA143 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 		0E50DBD02270896E00257D3B /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		0E50DBD22270A52700257D3B /* UIScreen+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
-		0E50DBD62270D3B000257D3B /* FinalSampleToArrivalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSampleToArrivalTransition.swift; sourceTree = "<group>"; };
-		0E50DBD82270D40E00257D3B /* ArrivalToFinalSampleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalToFinalSampleTransition.swift; sourceTree = "<group>"; };
-		0E9994EF226F71B300CAAFBA /* TransitionArrivalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionArrivalViewController.swift; sourceTree = "<group>"; };
-		0E9994F12270451800CAAFBA /* SampleToArrivalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleToArrivalTransition.swift; sourceTree = "<group>"; };
+		0E50DBD62270D3B000257D3B /* FirstToSecondFinalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstToSecondFinalTransition.swift; sourceTree = "<group>"; };
+		0E50DBD82270D40E00257D3B /* SecondToFirstFinalTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondToFirstFinalTransition.swift; sourceTree = "<group>"; };
+		0E9994EF226F71B300CAAFBA /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		0E9994F12270451800CAAFBA /* FirstToSecondTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstToSecondTransition.swift; sourceTree = "<group>"; };
 		0E9994F32270457100CAAFBA /* Transition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transition.swift; sourceTree = "<group>"; };
 		0E9994F52270495F00CAAFBA /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
-		0E9994F72270539F00CAAFBA /* ArrivalToSampleTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrivalToSampleTransition.swift; sourceTree = "<group>"; };
+		0E9994F72270539F00CAAFBA /* SecondToFirstTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondToFirstTransition.swift; sourceTree = "<group>"; };
 		0E9994FA22705CE300CAAFBA /* WaveButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveButton.swift; sourceTree = "<group>"; };
+		0EF1201A227B1977009B49D0 /* EmitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterViewController.swift; sourceTree = "<group>"; };
+		0EF1201C227B1984009B49D0 /* EmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmitterView.swift; sourceTree = "<group>"; };
+		0EF1202D227B41A0009B49D0 /* GradientButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		56DA4F81226F292C009E77C6 /* MeetupAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeetupAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56DA4F84226F292C009E77C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56DA4F86226F292C009E77C6 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +65,7 @@
 		56DA4F97226F3D25009E77C6 /* SliderSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderSampleViewController.swift; sourceTree = "<group>"; };
 		56DA4F99226F3D39009E77C6 /* Slider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slider.swift; sourceTree = "<group>"; };
 		56E8D3CE22704A44003F3DF5 /* AnimatedLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedLayer.swift; sourceTree = "<group>"; };
-		56E8D3D122705F9F003F3DF5 /* FinalSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalSampleViewController.swift; sourceTree = "<group>"; };
+		56E8D3D122705F9F003F3DF5 /* FirstFinalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstFinalViewController.swift; sourceTree = "<group>"; };
 		CE0D963C226F489400FDEF2C /* Lottie.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Lottie.framework; path = Carthage/Build/iOS/Lottie.framework; sourceTree = "<group>"; };
 		CE0D9641226F502200FDEF2C /* GiftBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftBoxView.swift; sourceTree = "<group>"; };
 		CE0D9643226F504200FDEF2C /* LottieSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieSampleViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +90,7 @@
 				56DA4F86226F292C009E77C6 /* ButtonsViewController.swift */,
 				0E06E807226F4F4F001EC3EA /* CheckButton.swift */,
 				0E9994FA22705CE300CAAFBA /* WaveButton.swift */,
+				0EF1202D227B41A0009B49D0 /* GradientButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -91,10 +98,10 @@
 		0E0B6DDD226F6ECA007AA143 /* Transition */ = {
 			isa = PBXGroup;
 			children = (
-				0E0B6DDB226F6EB5007AA143 /* TransitionSampleViewController.swift */,
-				0E9994EF226F71B300CAAFBA /* TransitionArrivalViewController.swift */,
-				0E9994F12270451800CAAFBA /* SampleToArrivalTransition.swift */,
-				0E9994F72270539F00CAAFBA /* ArrivalToSampleTransition.swift */,
+				0E0B6DDB226F6EB5007AA143 /* FirstViewController.swift */,
+				0E9994EF226F71B300CAAFBA /* SecondViewController.swift */,
+				0E9994F12270451800CAAFBA /* FirstToSecondTransition.swift */,
+				0E9994F72270539F00CAAFBA /* SecondToFirstTransition.swift */,
 				0E9994F32270457100CAAFBA /* Transition.swift */,
 			);
 			path = Transition;
@@ -107,6 +114,15 @@
 				0E50DBD22270A52700257D3B /* UIScreen+Utils.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		0EF12019227B1948009B49D0 /* Emitter */ = {
+			isa = PBXGroup;
+			children = (
+				0EF1201A227B1977009B49D0 /* EmitterViewController.swift */,
+				0EF1201C227B1984009B49D0 /* EmitterView.swift */,
+			);
+			path = Emitter;
 			sourceTree = "<group>";
 		};
 		56DA4F78226F292C009E77C6 = {
@@ -131,10 +147,11 @@
 			children = (
 				0E50DBCF2270895F00257D3B /* Helpers */,
 				56E8D3D022705F76003F3DF5 /* Final Sample */,
-				0E0B6DDD226F6ECA007AA143 /* Transition */,
 				0E06E809226F5759001EC3EA /* Buttons */,
-				56DA4F96226F3CFD009E77C6 /* Slider */,
+				0EF12019227B1948009B49D0 /* Emitter */,
+				0E0B6DDD226F6ECA007AA143 /* Transition */,
 				CE0D9640226F4FD000FDEF2C /* Lottie */,
+				56DA4F96226F3CFD009E77C6 /* Slider */,
 				CE0D9645226F506400FDEF2C /* Resources */,
 				56DA4F84226F292C009E77C6 /* AppDelegate.swift */,
 				0E06E803226F4B08001EC3EA /* ViewController.swift */,
@@ -160,9 +177,9 @@
 		56E8D3D022705F76003F3DF5 /* Final Sample */ = {
 			isa = PBXGroup;
 			children = (
-				56E8D3D122705F9F003F3DF5 /* FinalSampleViewController.swift */,
-				0E50DBD62270D3B000257D3B /* FinalSampleToArrivalTransition.swift */,
-				0E50DBD82270D40E00257D3B /* ArrivalToFinalSampleTransition.swift */,
+				56E8D3D122705F9F003F3DF5 /* FirstFinalViewController.swift */,
+				0E50DBD62270D3B000257D3B /* FirstToSecondFinalTransition.swift */,
+				0E50DBD82270D40E00257D3B /* SecondToFirstFinalTransition.swift */,
 			);
 			path = "Final Sample";
 			sourceTree = "<group>";
@@ -228,11 +245,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = charles;
 				TargetAttributes = {
 					56DA4F80226F292C009E77C6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -295,30 +313,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56E8D3CF22704A44003F3DF5 /* AnimatedLayer.swift in Sources */,
-				0E06E804226F4B08001EC3EA /* ViewController.swift in Sources */,
-				0E50DBD72270D3B000257D3B /* FinalSampleToArrivalTransition.swift in Sources */,
-				56DA4F87226F292C009E77C6 /* ButtonsViewController.swift in Sources */,
+				0EF12031227C2541009B49D0 /* AnimatedLayer.swift in Sources */,
+				0EF12033227C2541009B49D0 /* ViewController.swift in Sources */,
+				0E50DBD72270D3B000257D3B /* FirstToSecondFinalTransition.swift in Sources */,
+				0EF12034227C2541009B49D0 /* ButtonsViewController.swift in Sources */,
 				0E9994FB22705CE300CAAFBA /* WaveButton.swift in Sources */,
-				0E06E808226F4F4F001EC3EA /* CheckButton.swift in Sources */,
+				0EF12032227C2541009B49D0 /* CheckButton.swift in Sources */,
 				0E9994F62270495F00CAAFBA /* NavigationController.swift in Sources */,
 				0E9994F42270457100CAAFBA /* Transition.swift in Sources */,
-				0E9994F0226F71B300CAAFBA /* TransitionArrivalViewController.swift in Sources */,
-				0E0B6DDC226F6EB5007AA143 /* TransitionSampleViewController.swift in Sources */,
-				0E50DBD92270D40E00257D3B /* ArrivalToFinalSampleTransition.swift in Sources */,
+				0E9994F0226F71B300CAAFBA /* SecondViewController.swift in Sources */,
+				0EF1201B227B1977009B49D0 /* EmitterViewController.swift in Sources */,
+				0E0B6DDC226F6EB5007AA143 /* FirstViewController.swift in Sources */,
+				0E50DBD92270D40E00257D3B /* SecondToFirstFinalTransition.swift in Sources */,
 				56DA4F9A226F3D39009E77C6 /* Slider.swift in Sources */,
 				0E50DBD12270896E00257D3B /* Colors.swift in Sources */,
 				56DA4F98226F3D25009E77C6 /* SliderSampleViewController.swift in Sources */,
-				0E06E808226F4F4F001EC3EA /* CheckButton.swift in Sources */,
-				56DA4F87226F292C009E77C6 /* ButtonsViewController.swift in Sources */,
-				0E06E804226F4B08001EC3EA /* ViewController.swift in Sources */,
 				0E50DBD32270A52700257D3B /* UIScreen+Utils.swift in Sources */,
-				56E8D3D222705F9F003F3DF5 /* FinalSampleViewController.swift in Sources */,
-				56E8D3CF22704A44003F3DF5 /* AnimatedLayer.swift in Sources */,
+				56E8D3D222705F9F003F3DF5 /* FirstFinalViewController.swift in Sources */,
+				0EF1202E227B41A0009B49D0 /* GradientButton.swift in Sources */,
 				CE0D9642226F502200FDEF2C /* GiftBoxView.swift in Sources */,
 				56DA4F85226F292C009E77C6 /* AppDelegate.swift in Sources */,
-				0E9994F22270451800CAAFBA /* SampleToArrivalTransition.swift in Sources */,
-				0E9994F82270539F00CAAFBA /* ArrivalToSampleTransition.swift in Sources */,
+				0E9994F22270451800CAAFBA /* FirstToSecondTransition.swift in Sources */,
+				0E9994F82270539F00CAAFBA /* SecondToFirstTransition.swift in Sources */,
+				0EF1201D227B1984009B49D0 /* EmitterView.swift in Sources */,
 				CE0D9644226F504200FDEF2C /* LottieSampleViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -479,7 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qonto.MeetupAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -502,7 +519,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = qonto.MeetupAnimation;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

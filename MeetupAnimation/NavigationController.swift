@@ -10,6 +10,10 @@ import UIKit
 
 class NavigationController: UINavigationController {
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,21 +33,21 @@ extension NavigationController: UINavigationControllerDelegate {
     func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
 
         switch (fromVC, toVC) {
-        case is (TransitionSampleViewController, TransitionArrivalViewController):
+        case is (FirstViewController, SecondViewController):
             if operation == .push {
-                return SampleToArrivalTransition()
+                return FirstToSecondTransition()
             }
-        case is (TransitionArrivalViewController, TransitionSampleViewController):
+        case is (SecondViewController, FirstViewController):
             if operation == .pop {
-                return ArrivalToSampleTransition()
+                return SecondToFirstTransition()
             }
-        case is (FinalSampleViewController, TransitionArrivalViewController):
+        case is (FirstFinalViewController, SecondViewController):
             if operation == .push {
-                return FinalSampleToArrivalTransition()
+                return FirstToSecondFinalTransition()
             }
-        case is (TransitionArrivalViewController, FinalSampleViewController):
+        case is (SecondViewController, FirstFinalViewController):
             if operation == .pop {
-                return ArrivalToFinalSampleTransition()
+                return SecondToFirstFinalTransition()
             }
         default:
             return nil

@@ -57,7 +57,7 @@ class WaveButton: UIButton {
         fatalError("init(coder:) has not been implemented")
     }
 
-    func setupConstraints() {
+    private func setupConstraints() {
         NSLayoutConstraint.activate([
             outCircle.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             outCircle.topAnchor.constraint(equalTo: self.topAnchor),

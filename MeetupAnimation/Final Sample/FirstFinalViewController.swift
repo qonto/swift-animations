@@ -1,5 +1,5 @@
 //
-//  FinalSampleViewController.swift
+//  FirstFinalViewController.swift
 //  MeetupAnimation
 //
 //  Created by charles on 24/04/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FinalSampleViewController: UIViewController {
+class FirstFinalViewController: UIViewController {
 
     lazy var giftBoxView: GiftBoxView = {
         let view = GiftBoxView()
@@ -42,14 +42,14 @@ class FinalSampleViewController: UIViewController {
         return slider
     }()
 
-    private lazy var plusButton: WaveButton = {
+    lazy var plusButton: WaveButton = {
         let button = WaveButton(imageName: "ic_plus")
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(plusButtonPressed), for: .touchUpInside)
         return button
     }()
 
-    private lazy var minusButton: WaveButton = {
+    lazy var minusButton: WaveButton = {
         let button = WaveButton(imageName: "ic_minus")
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(minusButtonPressed), for: .touchUpInside)
@@ -131,7 +131,8 @@ class FinalSampleViewController: UIViewController {
     @objc
     func checkButtonPressed() {
         checkButton.hide {
-            let viewController = TransitionArrivalViewController()
+            let viewController = SecondViewController()
+            viewController.isFinalDemo = true
             self.navigationController?.pushViewController(viewController, animated: true)
         }
     }
@@ -152,7 +153,7 @@ class FinalSampleViewController: UIViewController {
 
 }
 
-extension FinalSampleViewController: SliderDelegate {
+extension FirstFinalViewController: SliderDelegate {
 
     func sliderValueChanged(_ sender: Slider) {
         updateProgressText()

@@ -1,5 +1,5 @@
 //
-//  TransitionArrivalViewController.swift
+//  SecondViewController.swift
 //  MeetupAnimation
 //
 //  Created by Marine Commercon on 23/04/2019.
@@ -8,7 +8,9 @@
 
 import UIKit
 
-class TransitionArrivalViewController: UIViewController {
+class SecondViewController: UIViewController {
+
+    var isFinalDemo = false
 
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -38,11 +40,38 @@ class TransitionArrivalViewController: UIViewController {
         return view
     }()
 
+    private lazy var emitterView: EmitterView = {
+        let view = EmitterView(frame: self.view.frame)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.alpha = 0
+        return view
+    }()
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupInterface()
         setupConstraints()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+
+        guard isFinalDemo == true else { return }
+
+        self.emitterView.start()
+        UIView.animate(withDuration: 0.5, animations: {
+            self.emitterView.alpha = 1
+        }, completion: nil)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        UIView.animate(withDuration: 0.5, animations: {
+            self.emitterView.alpha = 0
+        }, completion: { _ in
+            self.emitterView.stop()
+        })
     }
 
     private func setupInterface() {
@@ -51,17 +80,23 @@ class TransitionArrivalViewController: UIViewController {
         view.addSubview(titleLabel)
         view.addSubview(subtitleLabel)
         view.addSubview(imageView)
+        view.addSubview(emitterView)
     }
 
     private func setupConstraints() {
         NSLayoutConstraint.activate([
             titleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             titleLabel.topAnchor.constraint(equalTo: view.topAnchor, constant: 100),
+
             subtitleLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
             subtitleLabel.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 100),
             subtitleLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 50),
+
             imageView.centerXAnchor.constraint(equalTo: view.centerXAnchor),
-            imageView.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 50)
+            imageView.topAnchor.constraint(equalTo: subtitleLabel.bottomAnchor, constant: 50),
+
+            emitterView.topAnchor.constraint(equalTo: view.topAnchor, constant: -20),
+            emitterView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
             ])
     }
 
